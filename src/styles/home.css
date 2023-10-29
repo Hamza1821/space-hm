@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color:darkcyan;
+    display: flex;
+    align-items: center;
+   justify-content:flex-start;
+   border-bottom: 2px solid cyan;
+}
+/* https://t4.ftcdn.net/jpg/03/86/82/73/240_F_386827376_uWOOhKGk6A4UVL5imUBt20Bh8cmODqzx.jpg */
+.navChild{
+    padding: 10%;
+    color:white ;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+    width: 150%;
+ 
+}
+.link{
+    margin-right:20px;
+    text-decoration: none;
+    font-size: 25px;
+    height: 50px;
+    padding-top: 10px;
+    font-family: 'laila',serif;
+    color: aqua;
+    -webkit-text-stroke: 0.8px white;
+}
+
+
+
+
+
+
+@media screen and (max-width:1020px){
+    .link{
+        font-size: 14px;
+     
+        
+    }
+}
+
+
+
+
