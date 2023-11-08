@@ -10,6 +10,7 @@
     background-position: center;
     background-attachment: fixed;
     z-index: -999;
+    
 }
 button{
     font-family: 'gilroy';
@@ -245,11 +246,8 @@ font-family: 'gilroy';
     
       
   }
-  @media (max-width:760px) {
-    .gallery,.asod{
-        width: 90%;
-    }
-  }
+ 
+ 
   @media screen and  (orientation: portrait){
     .space{
         top: 20%;
@@ -257,5 +255,8 @@ font-family: 'gilroy';
     }
     .sattellite{
         top: 18%;
+    }
+    .asodp{
+       
     }
   }

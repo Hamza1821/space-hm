@@ -11,8 +11,8 @@ const header = () => {
         <div className="favicon navChild">Hm</div>
         <div className="nav navChild">
         <Link to='/' className='link'>Home</Link>
-          <Link to='/apod' className='link'>Astronomy Picture of Day</Link>
-          <Link to='/gallery' className='link'>Nasa Image Gallery</Link>
+          <Link to='/apod' className='link'>APOD</Link>
+          <Link to='/gallery' className='link'>Image Gallery</Link>
         </div>
    
     </div>

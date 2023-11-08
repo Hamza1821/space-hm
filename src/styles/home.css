@@ -83,11 +83,12 @@
       opacity: 0;
     }
     .link{
-        font-size: 25px;
+        font-size: 20px;
     }
     .navbar{
-        height: 100px;
+        height: 80px;
     }
+    
     
 
 }
