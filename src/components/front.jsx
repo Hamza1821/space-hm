@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/face.css'
 
+
 import img from  '../media/satellite.png'
 import {Link} from 'react-router-dom'
 import NASAImageGallery from './ImageGallery'
@@ -9,7 +10,7 @@ React.useEffect(() => {
         const textTag = document.getElementById("space");
         const textE = textTag.innerText;
         let idx = 0;
-        const speed = 500;
+        const speed = 400;
         const size = textE.length;
         console.log(size);
     
@@ -30,7 +31,7 @@ React.useEffect(() => {
     <div className='body1'>
       <main>
         <div id="textSpace">
-          <p class="space" id="space">SPACE</p>
+          <p class="space" id="space">SpaceHM</p>
           <img className='sattellite' src={img} alt="" />
         </div>
 

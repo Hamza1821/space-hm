@@ -105,13 +105,7 @@ const Apod = () => {
           </div>
         </div>)}
 
-        <div className="APODinfo">
-          <h1>What is APOD</h1>
-           <h3>
-Astronomy Picture of the Day, featured on Astro Hub, offers a captivating glimpse into the vastness of space. Each day, this platform showcases mesmerizing astronomical images, enlightening viewers about the mysteries of the universe. From distant galaxies to stunning nebulae, Astro Hub's Astronomy Picture of the Day takes you on a visual journey through space and time. Whether you're a seasoned astronomer or a curious novice, this daily dose of celestial beauty is sure to inspire and educate. Explore the cosmos effortlessly with Astro Hub and dive into the wonders of the universe today!</h3>
-<p>Discover the wonders of the cosmos through Astronomy Picture of the Day on Astro Hub. Immerse yourself in breathtaking celestial images and expand your knowledge of the universe. Explore the cosmos like never before!</p>
-
-        </div>
+        
 
         
       </div>

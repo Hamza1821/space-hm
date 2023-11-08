@@ -10,11 +10,16 @@
 
 
 .body2{
-    background-color: black;
-  height: 200vh;
+  background: url(https://images.unsplash.com/photo-1608178398319-48f814d0750c?q=80&w=1479&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+ 
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 50px;
  
  
 }
@@ -38,8 +43,10 @@
    
 }
 .apodh1{
-    color:rgb(7, 177, 177);
-    font-family:'laila',serif;
+    color:transparent;
+    -webkit-text-stroke: 2px cyan;
+    font-family:'gilroy',serif;
+    font-size: 300%;
 }
 .bydate{
     display: flex;
@@ -61,11 +68,12 @@
  
 }
 .t-title{
-    color: burlywood;
+    color: transparent;
+    -webkit-text-stroke: 2px burlywood;
 }
 .t-ex{
     color: white;
-    font-size: larger;
+    font-size:1.2rem;
 }
 .t-date{
     color: white;
@@ -75,6 +83,7 @@
 }
 .bdh{
     color:aquamarine;
+    font-size: 3vw;
 }
 .container{
     display: flex;
@@ -92,10 +101,18 @@
 .apodR button{
     background-color:darkcyan;
   border: none;
-   height: 41px;
+   height: 39px;
    color: aqua;
    border: none;
    width: 100px;
+   font-family: 'gilroy';
+   font-size: 13px;
+   
+}
+.searcgBtn{
+padding: 0;
+border-radius: 0px 0 0 0px;
+height: 40px;
 }
 .apodR button:hover{
     background-color: aqua;
@@ -114,7 +131,7 @@
 }
 
 .apodR input{
-    height: 38px;
+    height: 35px;
     font-size: 15px;
     width: 200px;
     background-color:white;
@@ -187,44 +204,49 @@
 {
  color: burlywood;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@keyframes satellite {
-  0%{
-    transform: translateX(0); 
-    
-  }
-  50%{
-    transform: translateX(-500%) ;
+@media screen  and (orientation:'portrait'){
+    .body2{
+        padding-top: 800px;
+    }
+    .apodh1{
+        font-size: 100px;
+    }
+    .searchBar {
+        height:60px;
      }
-   
-  
-    
+     .searcgBtn{
+        height: 64px;
+        color: red;
+     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
 @media screen and (max-width:790px)  {
     .today{
         margin: 0;

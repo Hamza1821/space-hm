@@ -74,11 +74,11 @@ function NASAImageGallery() {
    <>
      <Header/>
      <div className='body3'>
-      <h1 className='heading'>NASA Image Gallery</h1>
+     <span> <h1 className='heading'>NASA Image Gallery</h1></span>
       
       <div className="search">
         <input type="text" className='searchBar' placeholder='search..' />
-        <button className='searchBtn' id='searchBtn' onClick={() => { searchImage() }}>search</button>
+        <button className='searchBtn' id='searchBtn' onClick={() => { searchImage() }}><i class="bi bi-search"></i></button>
       </div>
       {loading ? (
         <p>Loading images...</p>
@@ -91,7 +91,7 @@ function NASAImageGallery() {
             return (<div key={index} className="image-card">
               <h3 className='card-title'>{item.data[0].title}</h3>
                <img className='card-image' src={item.links[0].href} alt={item.data[0].title} onClick={() => handleClicked(item.links[0].href, item.data[0].title)}/>
-               <button className='download' onClick={() => handleDownload(item.links[0].href, item.data[0].title)}>download</button>
+               <button className='downloadimg' onClick={() => handleDownload(item.links[0].href, item.data[0].title)}><i class="bi bi-download"></i></button>
 
 
            

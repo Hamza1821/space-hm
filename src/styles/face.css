@@ -3,29 +3,38 @@
     padding: 0;
 }
 .body1{
-    background: url('../media/spaceBg3.jpg');
+    background: url(https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=1511&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     width: 100%;
-    height: 200vh;
+    height: 300vh;
     background-size:cover;
     background-position: center;
+    background-attachment: fixed;
+    z-index: -999;
 }
-
-
+button{
+    font-family: 'gilroy';
+}
+h1{
+    font-family: 'gilroy';
+}
 
 .space{
     color: white;
     position:absolute;
     top: 40%;
+    font-family: 'gilroy';
     left: 50%;
     transform: translate(-50%,-50%);
-    font-size: 1000%;
+    font-size:10vw;
     background-image: url(https://t4.ftcdn.net/jpg/03/86/82/73/240_F_386827376_uWOOhKGk6A4UVL5imUBt20Bh8cmODqzx.jpg );
      background-size: cover;
      background-clip: text;
      -webkit-text-stroke: 1px black;
      -webkit-background-clip: text;
      color: transparent;
+     z-index: 10;
 }
+
 
 #textSpace{
  
@@ -37,9 +46,9 @@
 .sattellite{
     width: 15%;
     position:absolute;
-    top: 50%;
+    top: 35%;
     right:5%;
-    animation:satellite 30s linear infinite ;
+    animation:satellite 20s linear infinite ;
     
 }
 .pages{
@@ -68,7 +77,7 @@
 }
 .asodh1{
 color: white;
-font-size: larger;
+font-size: 3vw;
 
 
 }
@@ -77,12 +86,13 @@ font-size: larger;
     background-color: rgba(240, 248, 255, 0.247);
     color: black;
     width: 60%;
-   font-size: 120%;
+   font-size:3vm;
    text-shadow: 2px 2px 20px white;
    border-radius: 10px;
   
 }
 .asodbtn{
+    font-family: 'gilroy';
     height: 50px;
     width: 100px;
     background-color: #db00db;
@@ -101,7 +111,7 @@ font-size: larger;
     right: 0;
     width: 60%;
     height: 300px;
-    background: url("../media/spiral-milky-way-galaxy-57bi3fxyfrkifr0t\(1\).jpg");
+    background: url("https://images.unsplash.com/photo-1611716524065-622312678d68?q=80&w=1411&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-size: cover;
     border: 2px solid cyan;
     margin-top:10px ;
@@ -118,6 +128,8 @@ font-size: larger;
 }
 .galleryh1{
 color: white;
+font-size: 4vw;
+font-family: 'gilroy';
 
 }
 .galleryp{
@@ -130,14 +142,16 @@ color: white;
    border-radius: 10px
 }
 .galleryb{
+    color: white;
     height: 50px;
     width: 100px;
-    background-color: cyan;
+    background-color: rgb(56, 180, 180);
     border: none;
     margin-top: 10px;
     border-radius: 30px;
     box-shadow: 0 10px 5px 5px black;
     animation:bounce 10s linear infinite;
+ font-family: 'gilroy'
 
 
 }
@@ -145,52 +159,8 @@ color: white;
 
 
 
-.mars{
-    position: absolute;
-    left: 0;
-    width: 60%;
-    height: 300px;
-    background: url("../media/mars.webp");
-    background-size: cover;
-    border: 2px solid cyan;
-    margin-top:320px ;
-    border-radius:0 150px 150px 0;
-    text-align: center;
-    
-}
-.marscontnt{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    animation:bounce 10s linear infinite;
-}
-.marsh1{
-color:crimson;
-text-shadow: 0 5px  20px orange;
-
-}
-.marsp{
-    margin-top: 10px;
-    background-color: rgba(240, 248, 255, 0.247);
-    color: black;
-    width: 60%;
-   font-size: 120%;
-   text-shadow: 2px 2px 20px white;
-   border-radius: 10px
-}
-.marsb{
-    height: 50px;
-    width: 100px;
-    background-color: crimson;
-    border: none;
-    margin-top: 10px;
-    border-radius: 30px;
-    box-shadow: 0 10px 5px 5px black;
-    animation:bounce 10s linear infinite;
 
 
-}
 
 
 
@@ -238,12 +208,26 @@ text-shadow: 0 5px  20px orange;
 
 @keyframes satellite {
   0%{
-    transform: translateX(0); 
+    right: 5%; 
     
   }
   50%{
-    transform: translateX(-500%) ;
+    transform: rotateY(0deg);
+       right: 80%;
      }
+     51%{
+        transform: rotateY(180deg);
+           right: 80%;
+         }
+    99%{
+      transform: rotateY(180deg);
+               right: 7%;
+      }
+    100%{
+        transform: rotateY(0deg);
+        z-index: 15;
+        right:5%;
+    }
    
   
     
@@ -264,5 +248,14 @@ text-shadow: 0 5px  20px orange;
   @media (max-width:760px) {
     .gallery,.asod{
         width: 90%;
+    }
+  }
+  @media screen and  (orientation: portrait){
+    .space{
+        top: 20%;
+        font-size: 12vw;
+    }
+    .sattellite{
+        top: 18%;
     }
   }

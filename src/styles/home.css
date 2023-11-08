@@ -10,32 +10,57 @@
     background-color:darkcyan;
     display: flex;
     align-items: center;
-   justify-content:flex-start;
+    gap: 10px;
+   justify-content:space-between;
    border-bottom: 2px solid cyan;
+   overflow: hidden;
+   background: url(https://images.unsplash.com/photo-1443926818681-717d074a57af?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+   background-size: cover;
+   
+   z-index: 999;
+   position: absolute;
+   top: 0;
+   
+
 }
-/* https://t4.ftcdn.net/jpg/03/86/82/73/240_F_386827376_uWOOhKGk6A4UVL5imUBt20Bh8cmODqzx.jpg */
-.navChild{
-    padding: 10%;
-    color:white ;
-}
+
+
 .nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
    
     width: 150%;
+    font-family: 'gilroy';
  
 }
 .link{
     margin-right:20px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 3vb;
     height: 50px;
     padding-top: 10px;
-    font-family: 'laila',serif;
+    font-family: 'gilroy';
     color: aqua;
     -webkit-text-stroke: 0.8px white;
 }
+.favicon{
+    height: 100%;
+    text-align: center;
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+    margin:0 20px;
+    font-size: 60px;
+    font-family: "kajiro";
+      
+   
+  
+    
+}
+
 
 
 
@@ -44,12 +69,26 @@
 
 @media screen and (max-width:1020px){
     .link{
-        font-size: 14px;
-     
-        
+        font-size: 2.5vb;
+    }
+    .navbar{
+       justify-content: center;
+       align-items: center;
     }
 }
 
 
+@media screen and  (orientation: portrait){
+    .favicon{
+      opacity: 0;
+    }
+    .link{
+        font-size: 25px;
+    }
+    .navbar{
+        height: 100px;
+    }
+    
 
+}
 
