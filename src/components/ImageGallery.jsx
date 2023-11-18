@@ -81,7 +81,7 @@ function NASAImageGallery() {
         <button className='searchBtn' id='searchBtn' onClick={() => { searchImage() }}><i class="bi bi-search"></i></button>
       </div>
       {loading ? (
-        <p>Loading images...</p>
+           <div className="color-changing-spinner"></div>
       ) : (
         <div className="image-gallery">
           {media.map((item, index) => {

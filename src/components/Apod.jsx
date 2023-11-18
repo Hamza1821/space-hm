@@ -6,6 +6,7 @@ import Header from './header2.jsx';
 
 const Apod = () => {
   const [data, setData] = useState({});
+  const [loading ,setLoading] = useState(true)
    
 
   const searched=async()=>{
@@ -26,8 +27,10 @@ const Apod = () => {
 
   const fetchData = async () => {
     try {
+      setLoading(true)
       const today = await dataToday();
       setData(today);
+      setLoading(false)
     } catch (error) {
       console.error('Error fetching data:', error);
     }
@@ -60,6 +63,17 @@ const Apod = () => {
     link.download = title;
     link.click();
   };
+
+  const fetchImg=async()=>{
+        try {
+          setLoading(true)
+          const ig=await fetch(data.url)
+          setLoading(false)
+          return ig
+        } catch (error) {
+          
+        }
+  }
 
   return (
    <>

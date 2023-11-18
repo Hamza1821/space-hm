@@ -137,6 +137,39 @@ i{
    color: darkcyan;
    background-color: aqua;
 }
+.color-changing-spinner {
+   width: 50px;
+   height: 50px;
+   border: 5px solid transparent;
+   border-top: 5px solid #3498db; /* Initial color */
+   border-radius: 50%;
+   animation: spin 2s linear infinite, changeColor 10s linear infinite; /* Animation definitions */
+ }
+ 
+ @keyframes spin {
+   0% {
+     transform: rotate(0deg);
+   }
+   100% {
+     transform: rotate(360deg);
+   }
+ }
+ 
+ @keyframes changeColor {
+   0%, 25% {
+     border-top: 5px solid #3498db; /* Start with blue */
+   }
+   25%, 50% {
+     border-top: 5px solid #e74c3c; /* Transition to red */
+   }
+   50%, 75% {
+     border-top: 5px solid #27ae60; /* Transition to green */
+   }
+   75%, 100% {
+     border-top: 5px solid #f39c12; /* Transition to yellow */
+   }
+ }
+ 
 @media screen and  (orientation: portrait){
    .body3{
       padding-top: 100px;

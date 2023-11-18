@@ -204,7 +204,7 @@ height: 40px;
 {
  color: burlywood;
 }
-@media screen  and (orientation:'portrait'){
+@media screen  and (orientation:"portrait"){
     .body2{
         padding-top: 800px;
     }
@@ -261,13 +261,20 @@ height: 40px;
     
     }
     .body2{
-        height: 300vh;
+        padding-top: 100px;
     }
+   
 }
 
-@media (max-width:600px) {
+@media (max-width:1176px) {
     .today{
         flex-direction: column;
+        width: 100%;
+        border-radius: 10%;
+        
+    }
+    .body2{
+        padding-top: 100px;
     }
     
 }
