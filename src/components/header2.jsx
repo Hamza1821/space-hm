@@ -3,7 +3,7 @@ import '../styles/home.css'
 
 import {Link} from 'react-router-dom'
 
-const header = () => {
+const Header = () => {
   return (
     <>
     <div className='navbar'>
@@ -21,4 +21,4 @@ const header = () => {
   )
 }
 
-export default header
+export default Header
