@@ -84,18 +84,18 @@ const Apod = () => {
         <div className="bydate">
           <h1 className="bdh">Search by date</h1>
           <div className='apodR'>
-            <input type="text" placeholder="write in YYYY_MM_DD format" name="date" />
+            <input type="text" className='apodInput'  placeholder="write in YYYY_MM_DD format" name="date" />
             <button className="searcgBtn"
             id='asodb' onClick={()=>{searched()}}>search</button>
             <div className="refresh">
           
-           <button type="submit" className="refreshBtn" onClick={()=>{fetchData()}}>Today's APOD</button>
+           <button type="submit" className="refreshBtn" onClick={()=>{fetchData()}}>Today</button>
         
       </div>
           </div>
         </div>
 
-           {data.media_type=='image'?(<div className="today">
+           {data.media_type=='image'?(<div className="todayimg">
           <div className='sec'>
             <img className="img" src={data.url} alt="" onClick={() => handleClicked(data.hdurl,data.title)} />
             <button className='download' onClick={() => handleClicked(data.hdurl,data.title)}>View</button>

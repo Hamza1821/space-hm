@@ -26,6 +26,12 @@
 
 }
 
+.logo{
+    width: 80px;
+    height: 80px;
+    background-color: rgba(240, 248, 255, 0.11);
+    border-radius: 50%;
+}
 
 .nav{
     display: flex;
@@ -81,9 +87,7 @@
 
 
 @media screen and  (orientation: portrait){
-    .favicon{
-      opacity: 0;
-    }
+   
     .link{
         font-size: 20px;
     }
